@@ -1,78 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>Página Web Juan Quizhpi</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
+
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
     <main>
-      <h1>Home page</h1>
+      <div id="container">
+        <header>
+          <h1 class="title">FC BARCELONA</h1>
+        </header>
+
+        <nav>
+          <button class="btn">Página Principal</button>
+          <button class="btn">Siguiente Página</button>
+        </nav>
+        <section id="contenedor">
+          <div class="gallery">
+            <img
+              width="100px"
+              id="imagen"
+              src="https://pbs.twimg.com/media/FdMC3X_XkAEro3G?format=jpg&name=4096x4096"
+              alt="Imagen 1"
+            />
+          </div>
+        </section>
+
+        <aside>
+          <h2>FCB</h2>
+          <form>
+            <input type="text" id="datoBusqueda" />
+          </form>
+          <button id="buscarJ" onclick="buscar()">Buscar</button>
+          <button id="limpiarB" onclick="limpiar()">Limpiar</button>
+          <p id="respBusqueda"></p>
+          <p id="titleS">Seguidores</p>
+          <button id="btnSegir">Seguir</button>
+          <button id="btnEliminar">Eliminar</button>
+          <img
+            id="imSegui"
+            width="50px"
+            alt="DEL"
+            src="https://res.cloudinary.com/dte7upwcr/image/upload/f_auto,w_1200/blog/blog2/como-conseguir-seguidores-en-instagram/como-conseguir-seguidores-en-instagram-img_header.jpg"
+          />
+          <p id="seguidores"></p>
+        </aside>
+
+        <div class="clearfix"></div>
+      </div>
     </main>
   </body>
-</html>
-
-
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8" />
-	<title>Ejemplo de página web</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-	<header>
-		<h1>Mi sitio web</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Acerca de</a></li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
-	<article>
-		<h2>Título del artículo</h2>
-		<p>Este es el contenido de mi artículo. Puedo escribir todo lo que quiera aquí.</p>
-	</article>
-	<footer>
-		<p>Derechos de autor © 2023 Mi sitio web. Todos los derechos reservados.</p>
-	</footer>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Ejemplo de imagen de Google en HTML</title>
-</head>
-<body>
-	<h1>Logo de Google</h1>
-	<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Logo de Google">
-	<p>Este es el logo de Google. Es una imagen icónica que representa la marca de Google y su motor de búsqueda.</p>
-  
-  <h1>Bienvenidos a mi sitio web</h1>
-	<p>Este es mi sitio web. Mira el video de fondo mientras navegas por él.</p>
-	<video autoplay loop muted>
-		<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-		Tu navegador no soporta el formato de video.
-	</video>
-
-  <h1>Imagen con hover</h1>
-	<p>Pase el mouse sobre la imagen para ver el cambio de estado.</p>
-	<img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Imagen con hover">
-</body>
 </html>
